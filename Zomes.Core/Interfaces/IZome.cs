@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using Zome.Core.Models;
+using Zomes.Core.Models;
+using Zomes.Core.Interfaces;
 
-namespace Zome.Core.Interfaces;
+namespace Zomes.Core.Interfaces;
 
 public interface IZome
 {
