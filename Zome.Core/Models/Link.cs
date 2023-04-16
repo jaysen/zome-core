@@ -34,4 +34,9 @@ public class Link : Edge<INode>, ILink, ITaggable
     {
         return Tags.Contains(tag);
     }
+
+    public List<ITag> GetAllTags()
+    {
+        return Tags.ToList();
+    }
 }

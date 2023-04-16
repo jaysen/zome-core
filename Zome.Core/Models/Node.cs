@@ -37,4 +37,9 @@ public class Node : INode, ITaggable
         return Tags.Contains(tag);
     }
 
+    public List<ITag> GetAllTags()
+    {
+        return Tags.ToList();
+    }
+
 }

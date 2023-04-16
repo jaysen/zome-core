@@ -2,7 +2,6 @@
 
 namespace Zome.Core.Interfaces;
 
-
 public interface ITaggable
 {
     HashSet<ITag> Tags { get; set; }
@@ -10,4 +9,5 @@ public interface ITaggable
     void AddTag(ITag tag);
     void RemoveTag(ITag tag);
     bool HasTag(ITag tag);
+    List<ITag> GetAllTags(); // get tags as a list (for convenience)
 }
