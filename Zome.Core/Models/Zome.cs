@@ -5,7 +5,7 @@ using Zome.Core.Interfaces;
 
 namespace Zome.Core.Models;
 
-public class Zome : IZome, ITaggable
+public class Zome : BidirectionalGraph<INode, ILink>,  IZome, ITaggable
 {
     public HashSet<ITag> Tags { get; set; }
     public HashSet<INode> Nodes { get; set; }
