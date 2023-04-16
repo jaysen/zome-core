@@ -145,6 +145,31 @@ public class ZomeTests
         neighbors.Should().HaveCount(2).And.Contain(new[] { node2, node3 });
     }
 
+    [Fact]
+    public void FindShortestPath_ReturnsShortestPathBetweenTwoNodes()
+    {
+        // Arrange
+        var zome = new Zome();
+        var node1 = new Node("Node1");
+        var node2 = new Node("Node2");
+        var node3 = new Node("Node3");
+        var node4 = new Node("Node4");
+        var link1 = new Link(node1, node2);
+        var link2 = new Link(node2, node3);
+        var link3 = new Link(node1, node3);
+        var link4 = new Link(node3, node4);
+        zome.AddLink(link1);
+        zome.AddLink(link2);
+        zome.AddLink(link3);
+        zome.AddLink(link4);
+
+        // Act
+        var shortestPath = zome.FindShortestPath(node1, node4);
+
+        // Assert
+        shortestPath.Should().HaveCount(2).And.ContainInOrder(new[] { link3, link4 });
+    }
+
     // Add more test cases for Zome class here, including tests for:
     // - GetLink
     // - GetLinks
