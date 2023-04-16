@@ -4,7 +4,7 @@ using Zome.Core.Models;
 namespace Zome.Core.Interfaces;
 
 
-public interface ILink : IEdge<Node>, ITaggable
+public interface ILink : IEdge<INode>, ITaggable
 {
     double Weight { get; set; }
     string LinkType { get; set; }
