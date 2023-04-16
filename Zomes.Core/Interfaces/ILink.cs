@@ -1,7 +1,8 @@
 ﻿using QuikGraph;
-using Zome.Core.Models;
+using Zomes.Core.Interfaces;
+using Zomes.Core.Models;
 
-namespace Zome.Core.Interfaces;
+namespace Zomes.Core.Interfaces;
 
 
 public interface ILink : IEdge<INode>, ITaggable

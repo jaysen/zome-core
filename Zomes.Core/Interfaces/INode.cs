@@ -1,6 +1,6 @@
-﻿using Zome.Core.Models;
+﻿using Zomes.Core.Models;
 
-namespace Zome.Core.Interfaces;
+namespace Zomes.Core.Interfaces;
 
 public interface INode : ITaggable
 {

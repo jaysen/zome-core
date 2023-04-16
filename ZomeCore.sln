@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33513.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zome.Core", "Zome.Core\Zome.Core.csproj", "{F98408E1-AD79-455B-AF87-8F35963444B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zomes.Core", "Zomes.Core\Zomes.Core.csproj", "{F98408E1-AD79-455B-AF87-8F35963444B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zome.CLI", "Zome.CLI\Zome.CLI.csproj", "{B4CC9EFD-BCE2-43BD-A030-0238C7539810}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zomes.CLI", "Zomes.CLI\Zomes.CLI.csproj", "{B4CC9EFD-BCE2-43BD-A030-0238C7539810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zomes.Core.Tests", "Zomes.Core.Tests\Zomes.Core.Tests.csproj", "{73687FB9-00F6-4360-BEB0-116F16A4C044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B4CC9EFD-BCE2-43BD-A030-0238C7539810}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4CC9EFD-BCE2-43BD-A030-0238C7539810}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4CC9EFD-BCE2-43BD-A030-0238C7539810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73687FB9-00F6-4360-BEB0-116F16A4C044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73687FB9-00F6-4360-BEB0-116F16A4C044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73687FB9-00F6-4360-BEB0-116F16A4C044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73687FB9-00F6-4360-BEB0-116F16A4C044}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

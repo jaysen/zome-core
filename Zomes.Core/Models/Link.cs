@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Zome.Core.Interfaces;
+using Zomes.Core.Interfaces;
 
-namespace Zome.Core.Models;
+namespace Zomes.Core.Models;
 
 public class Link : Edge<INode>, ILink, ITaggable
 {

@@ -1,4 +1,4 @@
-﻿namespace Zome.Core.Interfaces;
+﻿namespace Zomes.Core.Interfaces;
 
 public interface ITag
 {

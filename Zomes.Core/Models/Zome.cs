@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using QuikGraph;
-using Zome.Core.Interfaces;
+using Zomes.Core.Interfaces;
 
-namespace Zome.Core.Models;
+namespace Zomes.Core.Models;
 
 public class Zome : BidirectionalGraph<INode, ILink>,  IZome, ITaggable
 {
