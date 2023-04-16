@@ -10,8 +10,6 @@ namespace Zome.Core.Models;
 
 public class Link : Edge<Node>, ILink, ITaggable
 {
-    public INode Source { get; }
-    public INode Target { get; }
     public double Weight { get; set; }
     public string LinkType { get; set; }
     public object Data { get; set; }
