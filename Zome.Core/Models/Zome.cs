@@ -106,13 +106,13 @@ public class Zome : IZome, ITaggable
         return links;
     }
 
-    public List<INode> FindShortestPath(INode startNode, INode endNode)
+    public List<ILink> FindShortestPath(INode startNode, INode endNode)
     {
         // code to find shortest path
         return null;
     }
 
-    public List<INode> FindWeightedShortestPath(INode startNode, INode endNode)
+    public List<ILink> FindWeightedShortestPath(INode startNode, INode endNode)
     {
         // code to find weighted shortest path
         return null;

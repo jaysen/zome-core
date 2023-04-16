@@ -25,8 +25,8 @@ public interface IZome
     List<INode> GetNodesWithTag(Tag tag);
     List<ILink> GetLinksWithTag(Tag tag);
 
-    List<INode> FindShortestPath(INode startNode, INode endNode);
-    List<INode> FindWeightedShortestPath(INode startNode, INode endNode);
+    List<ILink> FindShortestPath(INode startNode, INode endNode);
+    List<ILink> FindWeightedShortestPath(INode startNode, INode endNode);
 
     void AddTag(ITag tag);
     void RemoveTag(ITag tag);
