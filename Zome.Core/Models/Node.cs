@@ -13,26 +13,26 @@ public class Node : INode, ITaggable
     public string Label { get; set; }
     public object Data { get; set; }
 
-    public HashSet<Tag> Tags { get; set; }
+    public HashSet<ITag> Tags { get; set; }
 
     public Node(string label)
     {
         Id = Guid.NewGuid();
         Label = label;
-        Tags = new HashSet<Tag>();
+        Tags = new HashSet<ITag>();
     }
 
-    public void AddTag(Tag tag)
+    public void AddTag(ITag tag)
     {
         Tags.Add(tag);
     }
 
-    public void RemoveTag(Tag tag)
+    public void RemoveTag(ITag tag)
     {
         Tags.Remove(tag);
     }
 
-    public bool HasTag(Tag tag)
+    public bool HasTag(ITag tag)
     {
         return Tags.Contains(tag);
     }

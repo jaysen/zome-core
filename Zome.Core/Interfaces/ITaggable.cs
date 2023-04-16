@@ -1,14 +1,13 @@
-﻿using System;
-using Zome.Core.Models;
+﻿using Zome.Core.Models;
 
 namespace Zome.Core.Interfaces;
 
 
 public interface ITaggable
 {
-    HashSet<Tag> Tags { get; set; }
+    HashSet<ITag> Tags { get; set; }
 
-    void AddTag(Tag tag);
-    void RemoveTag(Tag tag);
-    bool HasTag(Tag tag);
+    void AddTag(ITag tag);
+    void RemoveTag(ITag tag);
+    bool HasTag(ITag tag);
 }

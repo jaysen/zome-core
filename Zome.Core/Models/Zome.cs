@@ -7,13 +7,13 @@ namespace Zome.Core.Models;
 
 public class Zome : IZome, ITaggable
 {
-    public HashSet<Tag> Tags { get; set; }
+    public HashSet<ITag> Tags { get; set; }
     public HashSet<INode> Nodes { get; set; }
     public HashSet<ILink> Links { get; set; }
 
     public Zome()
     {
-        Tags = new HashSet<Tag>();
+        Tags = new HashSet<ITag>();
         Nodes = new HashSet<INode>();
         Links = new HashSet<ILink>();
     }
@@ -118,17 +118,17 @@ public class Zome : IZome, ITaggable
         return null;
     }
 
-    public void AddTag(Tag tag)
+    public void AddTag(ITag tag)
     {
         Tags.Add(tag);
     }
 
-    public void RemoveTag(Tag tag)
+    public void RemoveTag(ITag tag)
     {
         Tags.Remove(tag);
     }
 
-    public bool HasTag(Tag tag)
+    public bool HasTag(ITag tag)
     {
         return Tags.Contains(tag);
     }

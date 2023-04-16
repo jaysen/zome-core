@@ -5,7 +5,7 @@ namespace Zome.Core.Interfaces;
 
 public interface IZome
 {
-    HashSet<Tag> Tags { get; set; }
+    HashSet<ITag> Tags { get; set; }
     HashSet<INode> Nodes { get; set; }
     HashSet<ILink> Links { get; set; }
 
@@ -28,7 +28,7 @@ public interface IZome
     List<INode> FindShortestPath(INode startNode, INode endNode);
     List<INode> FindWeightedShortestPath(INode startNode, INode endNode);
 
-    void AddTag(Tag tag);
-    void RemoveTag(Tag tag);
-    bool HasTag(Tag tag);
+    void AddTag(ITag tag);
+    void RemoveTag(ITag tag);
+    bool HasTag(ITag tag);
 }
